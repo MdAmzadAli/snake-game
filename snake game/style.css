@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+padding: 0;
+}
+.body{
+    background-image: url("img/bg.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    
+}
+#board{
+    /* background: linear-gradient(rgb(179,236,170),rgb(236,236,167)); */
+    background-color: rgba(171, 81, 81, 0.836);
+    height: 90vmin;
+    width: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background-image: url("img/snakehead-removebg-preview.png");
+    /* background-color: red; */
+    /* position:absolute; */
+    background-size: 5.2vmin;
+    /* background-color: rgb(127, 239, 127); */
+    background-repeat: no-repeat;
+    transform: rotate(-85deg);   
+    /* border: 2px solid black; */
+}
+.headu{
+background-image: url("img/snakehead-removebg-preview.png");
+/* background-color: red; */
+/* position:absolute; */
+background-size: 5.2vmin;
+background-repeat: no-repeat;
+transform: rotate(-85deg);
+
+}
+.headl{
+    background-image: url("img/snakehead-removebg-preview.png");
+    /* background-color: red; */
+    /* position:absolute; */
+    background-size: 5.2vmin;
+    background-repeat: no-repeat;
+    transform: rotateY(-180deg);
+    
+    }
+.headr{
+        background-image: url("img/snakehead-removebg-preview.png");
+        /* background-color: red; */
+        /* position:absolute; */
+        background-size: 5.2vmin;
+        background-repeat: no-repeat;
+    
+        
+}
+.headd{
+            background-image: url("img/snakehead-removebg-preview.png");
+            /* background-color: red; */
+            /* position:absolute; */
+            background-size: 5.2vmin;
+            background-repeat: no-repeat;
+            transform: rotate(90deg);
+            
+            }        
+.food{
+    background-image: url("img/mouse-removebg-preview.png");
+    background-size: 5.2vmin;
+
+background-repeat: no-repeat;
+}
+.snake{
+    background-color: rgb(127, 239, 127);
+    border-radius: 18px;
+    /* border: 1px solid black; */
+    
+
+}
+#scorebox{
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.9rem;
+
+}
+#highbox{
+    font-size: 2rem;
+    position: absolute;
+    top: 4rem;
+    right: 1.4rem;
+}
+#select{
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    /* height: 5vmin;
+    width: 34vmin; */
+    
+}
